@@ -12,10 +12,10 @@ $hotkeys = @()
 # ; Ctrl-Alt-G: Load Google Chrome
 # 
 Select-String -Path "$ScriptDir\..\ShortcutKeys\*.ahk" -Pattern "^; [A-Za-z0-9- ]+: .*$" |
-    % { $_.Matches } |
-    % { $_.Value } |
-    % { $_.trimstart( "; " ) } |
-    % {
+    ForEach-Object { $_.Matches } |
+    ForEach-Object { $_.Value } |
+    ForEach-Object { $_.trimstart( "; " ) } |
+    ForEach-Object {
         $hotkey = $( $_ -split ': ' )[0]
         $description = $( $_ -split ': ' )[1]
         $obj = New-Object PSObject -Property @{ hotkey = $hotkey ; description = $description }
