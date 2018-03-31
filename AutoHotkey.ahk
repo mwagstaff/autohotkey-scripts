@@ -11,6 +11,11 @@ SetCapsLockState, AlwaysOff     ; Disable CapsLock key (Win-CapsLock to enable)
 
 
 ;##########################################################################################################
+; Startup functions
+;##########################################################################################################
+GenerateHotKeyList()
+
+;##########################################################################################################
 ; Include shortcut keys
 ;##########################################################################################################
 #Include %A_ScriptDir%\Lib\ShortcutKeys\Alt.ahk
@@ -18,4 +23,5 @@ SetCapsLockState, AlwaysOff     ; Disable CapsLock key (Win-CapsLock to enable)
 #Include %A_ScriptDir%\Lib\ShortcutKeys\CapsLock.ahk
 #Include %A_ScriptDir%\Lib\ShortcutKeys\Ctrl.ahk
 #Include %A_ScriptDir%\Lib\ShortcutKeys\CtrlAlt.ahk
+#Include %A_ScriptDir%\Lib\ShortcutKeys\Esc.ahk
 #Include %A_ScriptDir%\Lib\ShortcutKeys\Win.ahk

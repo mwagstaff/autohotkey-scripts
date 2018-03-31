@@ -1,7 +1,13 @@
 ;##########################################################################################################
+; Win-/: Show hotkey list
+;##########################################################################################################
+#/:: ShowHotkeyList()
+
+
+;##########################################################################################################
 ; Win-CapsLock: Enable / disable CapsLock
 ;##########################################################################################################
-; Source: https://gist.github.com/Danik/5808330
+; Source - https://gist.github.com/Danik/5808330
 #Capslock::
 If GetKeyState("CapsLock", "T") = 1
     SetCapsLockState, AlwaysOff
@@ -13,7 +19,7 @@ Return
 ;##########################################################################################################
 ; Win-V: Paste without formatting
 ;##########################################################################################################
-; Source: https://autohotkey.com/board/topic/10412-paste-plain-text-and-copycut/
+; Source - https://autohotkey.com/board/topic/10412-paste-plain-text-and-copycut/
 #v::                            ; Text–only paste from ClipBoard
 Clip0 = %ClipBoardAll%
 ClipBoard = %ClipBoard%       ; Convert to text
