@@ -28,3 +28,9 @@ Sleep 50                      ; Don't change clipboard while it is pasted! (Slee
 ClipBoard = %Clip0%           ; Restore original ClipBoard
 VarSetCapacity(Clip0, 0)      ; Free memory
 Return
+
+
+;##########################################################################################################
+; Win-Q: Smart quit
+;##########################################################################################################
+#q:: SmartQuit()
